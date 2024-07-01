@@ -18,6 +18,7 @@ const NO_CHANGES = {
  * @returns {FunctionRunResult}
  */
 export function run(input) {
+  // The cart item
   const operations = input.cart.lines
     .filter(line => 
       line.merchandise.__typename === "ProductVariant" &&
